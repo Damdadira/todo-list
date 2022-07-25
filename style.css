@@ -1,0 +1,53 @@
+:root {
+  /* Font weight */
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --whight-extra-bold: 800;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  background-color: rgba(98, 166, 98, 0.389);
+  text-align: center;
+}
+
+.list {
+  width: 400px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.753);
+  border-radius: 20px;
+}
+
+.header {
+  height: 48px;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: var(--whight-extra-bold);
+  background: rgb(194, 226, 193);
+  background: linear-gradient(
+    184deg,
+    rgba(194, 226, 193, 1) 0%,
+    rgba(127, 195, 107, 1) 52%,
+    rgba(72, 117, 69, 1) 100%
+  );
+  border-radius: 20px 20px 0 0; /*위에만 radius주는 방법(양 옆 왼, 오만 값 주기)*/
+  color: white;
+}
+
+.footer {
+  background: rgb(194, 226, 193);
+  background: linear-gradient(
+    184deg,
+    rgba(194, 226, 193, 1) 0%,
+    rgba(127, 195, 107, 1) 52%,
+    rgba(72, 117, 69, 1) 100%
+  );
+}

@@ -110,3 +110,25 @@ body {
 .footer__button:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+  .list {
+    width: 330px;
+    height: 710px;
+    margin: 8px 6.2px;
+  }
+
+  .searchbox {
+    margin: 28px 14px;
+  }
+
+  .search__input {
+    padding: 0 18px 0 8px;
+  }
+
+  .footer__button {
+    margin-bottom: 18px;
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+}

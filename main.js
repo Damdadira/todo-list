@@ -75,8 +75,12 @@ addBtn.addEventListener('click', () => {
   onAdd();
 });
 
-input.addEventListener('keypress', (event) => {
+input.addEventListener('keydown', (event) => {
   // console.log('key');
+  if (event.isComposing) {
+    //글자가 만들어지는 중간의 이벤트는 무시하겠다(한글을 입력하면 두개가 입력되는 현상 개선)
+    return;
+  }
   if (event.key === 'Enter') {
     onAdd();
   }

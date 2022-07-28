@@ -112,14 +112,17 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    font-size: 22px;
+  }
+
   .list {
     width: 330px;
-    height: 710px;
-    margin: 8px 6.2px;
+    margin: 8px 10px;
   }
 
   .searchbox {
-    margin: 28px 14px;
+    margin: 28px 18px;
   }
 
   .search__input {
@@ -128,7 +131,7 @@ body {
 
   .footer__button {
     margin-bottom: 18px;
-    font-size: 18px;
-    padding: 10px 12px;
+    font-size: 14px;
+    padding: 10px 8px;
   }
 }

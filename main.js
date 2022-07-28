@@ -1,7 +1,14 @@
 const items = document.querySelector('.items');
+const form = document.querySelector('.new-form');
 const input = document.querySelector('.search__input');
 const addBtn = document.querySelector('.searchAdd__button');
 const deleteAllBtn = document.querySelector('.footer__button');
+
+form.addEventListener('submit', (event) => {
+  //submit은 입력이 되자마자 페이지를 다시 로딩하기 때문에 값이 바로 사라짐
+  event.preventDefault(); //값을 사라지지 않게 하겠다
+  onAdd();
+});
 
 function onAdd() {
   //1. 사용자가 입력한 텍스트를 받아옴
@@ -71,20 +78,21 @@ function createItem(text) {
   // return itemRow;
 }
 
-addBtn.addEventListener('click', () => {
-  onAdd();
-});
+//"form" 사용해서 전부 주석처리함!!!!!!!!!!
+// addBtn.addEventListener('click', () => {
+//   onAdd();
+// });
 
-input.addEventListener('keydown', (event) => {
-  // console.log('key');
-  if (event.isComposing) {
-    //글자가 만들어지는 중간의 이벤트는 무시하겠다(한글을 입력하면 두개가 입력되는 현상 개선)
-    return;
-  }
-  if (event.key === 'Enter') {
-    onAdd();
-  }
-});
+// input.addEventListener('keydown', (event) => {
+//   // console.log('key');
+//   if (event.isComposing) {
+//     //글자가 만들어지는 중간의 이벤트는 무시하겠다(한글을 입력하면 두개가 입력되는 현상 개선)
+//     return;
+//   }
+//   if (event.key === 'Enter') {
+//     onAdd();
+//   }
+// });
 
 items.addEventListener('click', (event) => {
   // console.log('he');

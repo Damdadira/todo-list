@@ -117,21 +117,21 @@ body {
   }
 
   .list {
-    width: 330px;
+    width: 340px;
     margin: 8px 10px;
   }
 
   .searchbox {
-    margin: 28px 18px;
+    margin: 30px 18px;
   }
 
   .search__input {
-    padding: 0 18px 0 8px;
+    padding: 0 20px 0 8px;
   }
 
   .footer__button {
     margin-bottom: 18px;
-    font-size: 14px;
-    padding: 10px 8px;
+    font-size: 15.5px;
+    padding: 10px 18px;
   }
 }

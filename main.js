@@ -50,52 +50,9 @@ function createItem(text) {
           <div class="item__divider"></div>`;
   id++;
   return itemRow;
-
-  // const item = document.createElement('div');
-  // item.setAttribute('class', 'item');
-
-  // const name = document.createElement('span');
-  // name.setAttribute('class', 'item__name');
-  // name.innerText = text; //span에는 전달받은 텍스트를 지정해줘야 하기 때문에 지정된 텍스트를 할당
-
-  // const deleteBtn = document.createElement('button');
-  // deleteBtn.setAttribute('class', 'item__delete');
-  // deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
-  // deleteBtn.addEventListener('click', () => {
-  //   items.removeChild(itemRow);
-  // });
-
-  // const itemDivider = document.createElement('div');
-  // itemDivider.setAttribute('class', 'item__divider');
-
-  // //item에 span,deleteBtn 추가
-  // item.appendChild(name);
-  // item.appendChild(deleteBtn);
-
-  // itemRow.appendChild(item);
-  // itemRow.appendChild(itemDivider);
-
-  // return itemRow;
 }
 
-//"form" 사용해서 전부 주석처리함!!!!!!!!!!
-// addBtn.addEventListener('click', () => {
-//   onAdd();
-// });
-
-// input.addEventListener('keydown', (event) => {
-//   // console.log('key');
-//   if (event.isComposing) {
-//     //글자가 만들어지는 중간의 이벤트는 무시하겠다(한글을 입력하면 두개가 입력되는 현상 개선)
-//     return;
-//   }
-//   if (event.key === 'Enter') {
-//     onAdd();
-//   }
-// });
-
 items.addEventListener('click', (event) => {
-  // console.log('he');
   const id = event.target.dataset.id;
   if (id) {
     const toBeDeleted = document.querySelector(`.item__row[data-id="${id}"]`);

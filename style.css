@@ -7,7 +7,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Play", sans-serif;
 }
 
 ul {
@@ -25,6 +25,10 @@ button {
 body {
   background-color: rgba(98, 166, 98, 0.389);
   text-align: center;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 .list {
@@ -46,16 +50,18 @@ body {
 
 .searchbox {
   display: flex;
+  gap: 1rem;
   margin: 32px 32px;
   font-size: 24px;
   color: white;
 }
 
 .search__input {
-  height: 38px;
+  width: 17rem;
+  height: 2.5rem;
   font-size: 18px;
-  padding: 0 50px 0 12px;
-  margin-right: 10px;
+  font-weight: var(--weight-bold);
+  padding: 12px;
   border-radius: 12px;
   border: 1px;
 }
@@ -64,19 +70,21 @@ body {
   background-color: rgb(87, 143, 87);
   color: white;
   font-size: 18px;
+  font-weight: var(--weight-bold);
   border-radius: 12px;
   padding: 2px 10px;
 }
 
 .items {
   height: 500px;
-  overflow-y: auto; /*아이템들이 많아지면 자동으로 scroll bar가 생김*/
+  overflow-y: auto; 
 }
 
 .item {
   display: flex;
   justify-content: space-between;
   padding: 8px 32px;
+  font-weight: var(--weight-bold);
 }
 
 .item__delete {
@@ -96,12 +104,11 @@ body {
 }
 
 .footer__button {
-  margin-bottom: 12px;
+  margin-bottom: 1.5rem;
   font-size: 20px;
   padding: 10px 12px;
-  font-weight: var(--whight-bold);
-  background-color: rgba(98, 166, 98, 0.777);
-  /* background-color: rgb(88, 158, 88); */
+  font-weight: var(--weight-bold);
+  background-color: rgb(87, 143, 87);
   border-radius: 14px;
   color: white;
   transition: transform 300ms ease-in-out;
